@@ -6,7 +6,7 @@ from typing import Tuple
 
 class Client():
 	run=False
-	def __init__(self, connect:Tuple[str,int]=("10.0.0.45",9999)) -> None:
+	def __init__(self, connect:Tuple[str,int]=("your ipv4",9999)) -> None:
 		signal.signal(signal.SIGINT, self.exit_gracefully)
 		signal.signal(signal.SIGTERM, self.exit_gracefully)
 		self.stop = False
